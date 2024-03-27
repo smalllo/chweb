@@ -130,14 +130,23 @@
 	  <div class="divcss">	
 		<h4><span style="font: size 40px;color: #226e93;">Expertise (專長):</span><br></h4>
 		<h6><span style="font: size 40px;color: #000000;">Applied Cryptography; Information and Communication Security; Blockchain Technology; IoT Security; Artificial Intelligence of Things (AIoT), Mobile, Wireless Communication and Network Protocols; Medical and Bio-information Image Processing; AI and Soft Computing.</span><br></h6>
-	    <h6><span style="font: size 40px;color: #000000;">1.Information and Communication Security  (資通訊安全)</span><br></h6>
-        <h6><span style="font: size 40px;color: #000000;">2.Artificial Intelligence of Things (AIoT) (智慧物聯網)</span><br></h6>
-        <h6><span style="font: size 40px;color: #000000;">3.Applications of Blockchain Technology and Its Security (區塊鏈技術應用與安全)</span><br></h6>
-        <h6><span style="font: size 40px;color: #000000;">4.Applications of Internet of Things and Its Security (物聯網應用與安全)</span><br></h6>
-        <h6><span style="font: size 40px;color: #000000;">5.Mobile, Wireless Communication and Network Protocols (行動及無線通信與網路協定)</span><br></h6>
-        <h6><span style="font: size 40px;color: #000000;">6.Medical and Bio-information Image Processing (醫學與生物影像處理)</span><br></h6>
-        <h6><span style="font: size 40px;color: #000000;">7.Artificial Intelligence and Soft Computing (人工智慧與軟計算)</span><br></h6>
-        <h6><span style="font: size 40px;color: #000000;">8.Applied Cryptography (應用密碼學)</span><br></h6>
+	    <h6><span style="font: size 40px;color: #000000;">Information and Communication Security  (資通訊安全)</span><br></h6>
+        <h6><span style="font: size 40px;color: #000000;">Artificial Intelligence of Things (AIoT) (智慧物聯網)</span><br></h6>
+        <h6><span style="font: size 40px;color: #000000;">Applications of Blockchain Technology and Its Security (區塊鏈技術應用與安全)</span><br></h6>
+        <h6><span style="font: size 40px;color: #000000;">Applications of Internet of Things and Its Security (物聯網應用與安全)</span><br></h6>
+        <h6><span style="font: size 40px;color: #000000;">Mobile, Wireless Communication and Network Protocols (行動及無線通信與網路協定)</span><br></h6>
+        <h6><span style="font: size 40px;color: #000000;">Medical and Bio-information Image Processing (醫學與生物影像處理)</span><br></h6>
+        <h6><span style="font: size 40px;color: #000000;">Artificial Intelligence and Soft Computing (人工智慧與軟計算)</span><br></h6>
+        <h6><span style="font: size 40px;color: #000000;">Applied Cryptography (應用密碼學)</span><br></h6>
 	  </div>
-
+	  <script>
+		window.onload = function() {
+			var headers = document.querySelectorAll('h6'); 
+			for (var i = 0; i < headers.length; i++) {
+				var header = headers[i];
+				var span = header.querySelector('span'); 
+				span.innerHTML = (i + 1) + "." + span.innerHTML; 
+			}
+		}
+		</script>
 </body>
